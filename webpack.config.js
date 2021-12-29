@@ -38,7 +38,7 @@ module.exports = {
                             implementation: require('sass'),
                             sassOptions: {
                                 // fibers を使わない場合は以下で false を指定
-                                fiber: require('fibers'),
+                                fiber: false,
                             },
                             // ソースマップを有効に
                             sourceMap: true,

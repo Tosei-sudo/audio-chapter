@@ -102,12 +102,17 @@ export default {
             let h = Math.floor(second / 3600);
             let m = Math.floor((second % 3600) / 60);
             let s = Math.floor(second % 60);
-            return (
-                (h > 0 ? h + ":" : this.max > 3600 ? "00:" : "") +
-                (m < 10 ? "0" + m : m) +
-                ":" +
-                (s < 10 ? "0" + s : s)
-            );
+            let f = "";
+            if (h > 0 && h >= 10) {
+                f = h + ":";
+            } else if (h > 0) {
+                f = "0" + h + ":";
+            } else if (this.max < 3600) {
+                f = "00:";
+            } else {
+                f = "";
+            }
+            return f + (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s);
         },
         reverseTime(time) {
             let t = time.split(":");
