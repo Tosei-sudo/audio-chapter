@@ -102,7 +102,6 @@ export default {
             let h = Math.floor(second / 3600);
             let m = Math.floor((second % 3600) / 60);
             let s = Math.floor(second % 60);
-
             return (
                 (h > 0 ? h + ":" : this.max > 3600 ? "00:" : "") +
                 (m < 10 ? "0" + m : m) +
