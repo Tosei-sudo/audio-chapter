@@ -1,5 +1,5 @@
 {
-  "name": "Template",
+  "name": "audio-chapter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tosei-sudo/Template.git"
+    "url": "git+https://github.com/Tosei-sudo/audio-chapter.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tosei-sudo/Template/issues"
+    "url": "https://github.com/Tosei-sudo/audio-chapter/issues"
   },
-  "homepage": "https://github.com/Tosei-sudo/Template#readme",
+  "homepage": "https://github.com/Tosei-sudo/audio-chapter#readme",
   "devDependencies": {
     "@types/node": "^16.11.11",
     "css-loader": "^6.5.1",
@@ -42,15 +42,15 @@
   },
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-regular-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "axios": "^0.24.0",
     "vue": "^2.6.14",
     "vue-2-breadcrumbs": "^0.8.0",
     "vue-breadcrumbs": "^1.2.0",
     "vue-class-component": "^7.2.6",
     "vue-js-toggle-button": "^1.3.3",
     "vue-loading-template": "^1.3.2",
+    "vue-slider-component": "^3.2.15",
+    "vue2-timepicker": "^1.1.6",
     "vuejs-dialog": "^1.4.2"
   }
 }
